@@ -8,7 +8,7 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy to VDS
+      - name: Sync files to VDS
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.VDS_HOST }}
