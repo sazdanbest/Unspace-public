@@ -14,4 +14,5 @@ jobs:
           host: ${{ secrets.VDS_HOST }}
           username: ${{ secrets.VDS_USER }}
           key: ${{ secrets.VDS_SSH_KEY }}
+          port: ${{ secrets.VDS_PORT }}
           script: /opt/unspace/sync.sh >> /var/log/unspace-sync.log 2>&1
